@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>NambaTracker Website</title>
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        .navbar { 
+          display: flex; 
+          align-items: center; 
+          padding: 20px;
+          background-color: #4ACA8D;
+        } 
+
+        .nav { 
+            flex: 1; 
+            text-align: right;
+           } 
+           
+        nav ul { 
+            display: inline-block; 
+            list-style: none; 
+        } 
+        nav ul li { 
+            display: inline-block; 
+            margin-right: 10px; 
+        } 
+        nav ul li a {
+             text-decoration: none; 
+             text-transform: none; 
+             color: #000000; 
+            } 
+        nav ul li a:hover { 
+            color: #e9fccd;
+        }
+        #icon-container {
+            position: absolute;
+            top: 37px;
+            right: 10px;
+            display: flex; /* Optional: Use flexbox for horizontal alignment */
+        }
+
+        .row {
+        display: flex; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+        padding: 030px;
+        } 
+        
+        .col-2 {
+            flex-basis: 40%; 
+            min-width: 200px;
+          } 
+        
+          .btn { 
+            display: inline-block; 
+            background: #00651C; 
+            color: black; 
+            font-style: inherit;
+            padding: 8px 30px; 
+            margin: 40px 50px 30px 5px; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            transition: background 0.5s;
+             } 
+             .btn:hover {
+                background: #548e44;
+                } 
+    </style>
+   </head>
+
+   <body>
+    <div class = "navbar">
+        <div><b>Namba Tracker</b></div>
+
+            <nav>
+            <ul id="menu-items"style="max-height: 0px;">
+            <div id = "icon-container">
+            <li><a><img src='./HomePageIcon.png' alt width="15px"></a></li>
+            <li><a>Tracker</a></li>
+            <li><a><img src='./userIcon.png' alt width="15px"></a></li>
+            </div>
+            </ul>
+            </nav>
+  </div>
+        
+   <div class="row">
+    <div class="col-2">
+        <h1> Your bus has arrived!<br>
+        &nbsp;Ready to board in....
+        </h1>
+    </div>
+    <div class="col-2">
+        <a href class="btn">Board</a>
+    </div>
+   </div>
+    
+   </body>
